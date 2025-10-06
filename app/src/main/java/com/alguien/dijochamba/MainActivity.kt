@@ -43,6 +43,5 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun GreetingPreview() {
     AlguienDijoChambaTheme {
         Greeting("Android")
-// add comments
     }
 }
