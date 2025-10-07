@@ -1,4 +1,5 @@
 package com.alguien.dijochamba
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -12,7 +13,9 @@ import androidx.navigation.compose.rememberNavController
 import com.alguien.dijochamba.presentation.screens.welcome.WelcomeScreen
 import com.alguien.dijochamba.presentation.theme.DijoChambaTheme
 import com.alguien.dijochamba.presentation.screens.ready.ReadyScreen
-import com.alguien.dijochamba.presentation.screens.register.RegisterScreen // Agregar este import
+import com.alguien.dijochamba.presentation.screens.register.RegisterScreen
+import com.alguien.dijochamba.presentation.screens.profile.CompleteProfileScreen
+import com.alguien.dijochamba.presentation.screens.auth.SignInScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +41,12 @@ class MainActivity : ComponentActivity() {
                         }
                         composable("register") {
                             RegisterScreen(navController = navController)
+                        }
+                        composable("completeProfile") {
+                            CompleteProfileScreen(navController = navController)
+                        }
+                        composable("signIn") {
+                            SignInScreen(navController = navController)
                         }
                     }
                 }
