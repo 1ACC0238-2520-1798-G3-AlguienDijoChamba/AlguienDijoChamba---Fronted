@@ -13,17 +13,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.compose.rememberNavController
-import coil3.compose.rememberAsyncImagePainter
+import com.alguien.dijochamba.R
 
 @Composable
 fun Intro2(
-
     onContinue: () -> Unit,
     onCreateAccount: () -> Unit
 ) {
@@ -42,14 +43,16 @@ fun Intro2(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(32.dp)
         ) {
+            // Contenedor circular con la imagen para Intro2
             Box(
                 modifier = Modifier
                     .size(192.dp)
-                    .background(Color(0xFFF9FAFB), shape = CircleShape)
+                    .clip(CircleShape)
+                    .background(Color(0xFFF9FAFB))
             ) {
                 Image(
-                    painter = rememberAsyncImagePainter("https://placehold.co/192x192"),
-                    contentDescription = "Intro image",
+                    painter = painterResource(id = R.drawable.onboarding_image2),
+                    contentDescription = "Professional community illustration",
                     modifier = Modifier.fillMaxSize(),
                     contentScale = ContentScale.Crop
                 )

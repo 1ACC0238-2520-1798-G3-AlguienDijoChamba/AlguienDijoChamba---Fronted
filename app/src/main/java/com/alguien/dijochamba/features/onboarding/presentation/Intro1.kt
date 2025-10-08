@@ -11,13 +11,15 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.compose.rememberNavController
-import coil3.compose.rememberAsyncImagePainter
+import com.alguien.dijochamba.R
 
 @Composable
 fun Intro1(
@@ -38,16 +40,18 @@ fun Intro1(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(32.dp)
         ) {
+            // Contenedor circular con la imagen
             Box(
                 modifier = Modifier
                     .size(192.dp)
-                    .background(Color(0xFFF9FAFB), shape = CircleShape)
+                    .clip(CircleShape) // <- Esto asegura que todo dentro sea circular
+                    .background(Color(0xFFF9FAFB))
             ) {
                 Image(
-                    painter = rememberAsyncImagePainter("https://placehold.co/192x192"),
-                    contentDescription = "Intro image",
+                    painter = painterResource(id = R.drawable.onboarding_image),
+                    contentDescription = "Professional services illustration",
                     modifier = Modifier.fillMaxSize(),
-                    contentScale = ContentScale.Crop
+                    contentScale = ContentScale.Crop // <- Recorta la imagen para que encaje en el círculo
                 )
             }
 
@@ -98,7 +102,6 @@ fun Intro1(
                 .align(Alignment.TopCenter)
                 .padding(top = 64.dp)
         ) {
-
             Box(
                 modifier = Modifier
                     .size(8.dp)
@@ -112,6 +115,7 @@ fun Intro1(
         }
     }
 }
+
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun Intro1Preview() {
