@@ -1,7 +1,7 @@
-package pe.edu.upc.easyshop.features.auth.presentation.di
+package com.alguien.dijochamba.features.auth.presentation.di
 
-import pe.edu.upc.easyshop.features.auth.data.di.DataModule.getAuthRepository
-import pe.edu.upc.easyshop.features.auth.presentation.login.LoginViewModel
+import com.alguien.dijochamba.features.auth.data.di.DataModule.getAuthRepository
+import com.alguien.dijochamba.features.auth.presentation.login.LoginViewModel
 
 object PresentationModule {
 

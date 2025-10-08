@@ -41,7 +41,7 @@ android {
 }
 
 dependencies {
-    implementation("io.coil-kt.coil3:coil-compose:3.0.0")
+    implementation(libs.coil.compose.v300)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -50,6 +50,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    implementation(libs.androidx.compose.foundation)
+
 
     testImplementation(libs.junit)
 

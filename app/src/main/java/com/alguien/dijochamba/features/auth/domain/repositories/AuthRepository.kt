@@ -1,6 +1,6 @@
-package pe.edu.upc.easyshop.features.auth.domain.repositories
+package com.alguien.dijochamba.features.auth.domain.repositories
 
-import pe.edu.upc.easyshop.features.auth.domain.models.User
+import com.alguien.dijochamba.features.auth.domain.models.User
 
 interface AuthRepository {
     suspend fun login(username: String, password: String): User?

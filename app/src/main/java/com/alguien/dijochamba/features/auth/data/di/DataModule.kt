@@ -1,8 +1,8 @@
-package pe.edu.upc.easyshop.features.auth.data.di
+package com.alguien.dijochamba.features.auth.data.di
 
-import pe.edu.upc.easyshop.features.auth.data.remote.services.AuthService
-import pe.edu.upc.easyshop.features.auth.data.repositories.AuthRepositoryImpl
-import pe.edu.upc.easyshop.features.auth.domain.repositories.AuthRepository
+import com.alguien.dijochamba.features.auth.data.remote.services.AuthService
+import com.alguien.dijochamba.features.auth.data.repositories.AuthRepositoryImpl
+import com.alguien.dijochamba.features.auth.domain.repositories.AuthRepository
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

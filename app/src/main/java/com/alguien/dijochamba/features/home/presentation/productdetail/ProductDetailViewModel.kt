@@ -1,12 +1,12 @@
-package pe.edu.upc.easyshop.features.home.presentation.productdetail
+package com.alguien.dijochamba.features.home.presentation.productdetail
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import pe.edu.upc.easyshop.features.home.domain.repositories.ProductRepository
-import pe.edu.upc.easyshop.shared.models.Product
+import com.alguien.dijochamba.features.home.domain.repositories.ProductRepository
+import com.alguien.dijochamba.models.Product
 
 class ProductDetailViewModel(private val repository: ProductRepository) : ViewModel() {
     private val _product = MutableStateFlow<Product?>(null)

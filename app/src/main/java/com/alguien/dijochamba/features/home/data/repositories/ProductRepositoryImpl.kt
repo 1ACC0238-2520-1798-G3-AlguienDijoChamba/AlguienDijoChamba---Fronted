@@ -1,12 +1,12 @@
-package pe.edu.upc.easyshop.features.home.data.repositories
+package com.alguien.dijochamba.features.home.data.repositories
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import pe.edu.upc.easyshop.features.home.data.local.dao.ProductDao
-import pe.edu.upc.easyshop.features.home.data.local.models.ProductEntity
-import pe.edu.upc.easyshop.features.home.data.remote.services.ProductService
-import pe.edu.upc.easyshop.features.home.domain.repositories.ProductRepository
-import pe.edu.upc.easyshop.shared.models.Product
+import com.alguien.dijochamba.features.home.data.local.dao.ProductDao
+import com.alguien.dijochamba.features.home.data.local.models.ProductEntity
+import com.alguien.dijochamba.features.home.data.remote.services.ProductService
+import com.alguien.dijochamba.features.home.domain.repositories.ProductRepository
+import com.alguien.dijochamba.models.Product
 
 class ProductRepositoryImpl(
     private val service: ProductService,

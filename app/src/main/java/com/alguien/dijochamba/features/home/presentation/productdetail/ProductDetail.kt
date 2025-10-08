@@ -1,4 +1,4 @@
-package pe.edu.upc.easyshop.features.home.presentation.productdetail
+package com.alguien.dijochamba.features.home.presentation.productdetail
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

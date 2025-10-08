@@ -1,6 +1,5 @@
-package pe.edu.upc.easyshop.features.home.presentation.home
+package com.alguien.dijochamba.features.home.presentation.home
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -42,16 +41,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import pe.edu.upc.easyshop.R
+import com.alguien.dijochamba.R
 import pe.edu.upc.easyshop.core.ui.components.RoundedIcon
-import pe.edu.upc.easyshop.core.ui.theme.EasyShopTheme
-import pe.edu.upc.easyshop.features.home.presentation.di.PresentationModule.getHomeViewModel
+import com.alguien.dijochamba.core.ui.theme.EasyShopTheme
+import com.alguien.dijochamba.features.home.presentation.di.PresentationModule.getHomeViewModel
 
 @Composable
 fun Home(
@@ -220,14 +217,6 @@ fun Home(
                         Text(stringResource(R.string.button_shop_now))
                     }
                 }
-                Image(
-                    painterResource(R.drawable.banner),
-                    contentDescription = null,
-                    modifier = Modifier
-                        .weight(1f)
-                        .fillMaxHeight(),
-                    contentScale = ContentScale.FillWidth
-                )
             }
         }
 

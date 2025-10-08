@@ -1,4 +1,4 @@
-package pe.edu.upc.easyshop.shared.models
+package com.alguien.dijochamba.models
 
 data class Product(
     val id: Int,

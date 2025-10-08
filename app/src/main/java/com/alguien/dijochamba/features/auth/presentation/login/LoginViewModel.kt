@@ -1,12 +1,12 @@
-package pe.edu.upc.easyshop.features.auth.presentation.login
+package com.alguien.dijochamba.features.auth.presentation.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import pe.edu.upc.easyshop.features.auth.domain.models.User
-import pe.edu.upc.easyshop.features.auth.domain.repositories.AuthRepository
+import com.alguien.dijochamba.features.auth.domain.models.User
+import com.alguien.dijochamba.features.auth.domain.repositories.AuthRepository
 
 class LoginViewModel(private val repository: AuthRepository) : ViewModel() {
 

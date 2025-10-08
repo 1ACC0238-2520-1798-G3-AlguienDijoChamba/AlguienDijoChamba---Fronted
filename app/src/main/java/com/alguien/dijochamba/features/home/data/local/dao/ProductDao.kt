@@ -1,12 +1,10 @@
-package pe.edu.upc.easyshop.features.home.data.local.dao
+package com.alguien.dijochamba.features.home.data.local.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy.Companion.REPLACE
 import androidx.room.Query
-import androidx.room.Update
-import pe.edu.upc.easyshop.features.home.data.local.models.ProductEntity
+import com.alguien.dijochamba.features.home.data.local.models.ProductEntity
 
 @Dao
 interface ProductDao {

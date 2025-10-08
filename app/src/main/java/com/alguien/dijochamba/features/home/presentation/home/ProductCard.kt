@@ -1,4 +1,4 @@
-package pe.edu.upc.easyshop.features.home.presentation.home
+package com.alguien.dijochamba.features.home.presentation.home
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -20,7 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import pe.edu.upc.easyshop.shared.models.Product
+import com.alguien.dijochamba.models.Product
 
 @Composable
 fun ProductCard(product: Product, onClick: () -> Unit) {

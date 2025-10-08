@@ -1,11 +1,11 @@
-package pe.edu.upc.easyshop.features.auth.data.repositories
+package com.alguien.dijochamba.features.auth.data.repositories
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import pe.edu.upc.easyshop.features.auth.data.remote.models.LoginRequestDto
-import pe.edu.upc.easyshop.features.auth.data.remote.services.AuthService
-import pe.edu.upc.easyshop.features.auth.domain.models.User
-import pe.edu.upc.easyshop.features.auth.domain.repositories.AuthRepository
+import com.alguien.dijochamba.features.auth.data.remote.models.LoginRequestDto
+import com.alguien.dijochamba.features.auth.data.remote.services.AuthService
+import com.alguien.dijochamba.features.auth.domain.models.User
+import com.alguien.dijochamba.features.auth.domain.repositories.AuthRepository
 
 class AuthRepositoryImpl(private val service: AuthService) : AuthRepository {
     override suspend fun login(

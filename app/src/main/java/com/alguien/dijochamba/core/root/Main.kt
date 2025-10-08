@@ -18,9 +18,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.tooling.preview.Preview
-import pe.edu.upc.easyshop.core.ui.theme.EasyShopTheme
-import pe.edu.upc.easyshop.features.home.presentation.di.PresentationModule.getHomeViewModel
-import pe.edu.upc.easyshop.features.home.presentation.home.Home
+import com.alguien.dijochamba.core.ui.theme.EasyShopTheme
+import com.alguien.dijochamba.features.home.presentation.di.PresentationModule.getHomeViewModel
+import com.alguien.dijochamba.features.home.presentation.home.Home
 
 @Composable
 fun Main(onClick: (Int) -> Unit) {

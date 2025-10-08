@@ -1,4 +1,4 @@
-package pe.edu.upc.easyshop.core.ui.theme
+package com.alguien.dijochamba.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

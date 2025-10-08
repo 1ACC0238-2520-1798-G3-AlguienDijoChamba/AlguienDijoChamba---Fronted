@@ -1,4 +1,4 @@
-package pe.edu.upc.easyshop.features.auth.domain.models
+package com.alguien.dijochamba.features.auth.domain.models
 
 data class User(
     val name: String,

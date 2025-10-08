@@ -1,7 +1,7 @@
-package pe.edu.upc.easyshop.features.home.data.remote.services
+package com.alguien.dijochamba.features.home.data.remote.services
 
-import pe.edu.upc.easyshop.features.home.data.remote.models.ProductDto
-import pe.edu.upc.easyshop.features.home.data.remote.models.ProductsWrapperDto
+import com.alguien.dijochamba.features.home.data.remote.models.ProductDto
+import com.alguien.dijochamba.features.home.data.remote.models.ProductsWrapperDto
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

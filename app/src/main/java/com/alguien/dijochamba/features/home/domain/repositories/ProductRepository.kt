@@ -1,6 +1,6 @@
-package pe.edu.upc.easyshop.features.home.domain.repositories
+package com.alguien.dijochamba.features.home.domain.repositories
 
-import pe.edu.upc.easyshop.shared.models.Product
+import com.alguien.dijochamba.models.Product
 
 interface ProductRepository {
 

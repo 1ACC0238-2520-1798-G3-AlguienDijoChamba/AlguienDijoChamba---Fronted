@@ -1,4 +1,4 @@
-package pe.edu.upc.easyshop.features.auth.data.remote.models
+package com.alguien.dijochamba.features.auth.data.remote.models
 
 data class LoginResponseDto(
     val accessToken: String?,

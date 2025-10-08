@@ -1,7 +1,7 @@
-package pe.edu.upc.easyshop.features.auth.data.remote.services
+package com.alguien.dijochamba.features.auth.data.remote.services
 
-import pe.edu.upc.easyshop.features.auth.data.remote.models.LoginRequestDto
-import pe.edu.upc.easyshop.features.auth.data.remote.models.LoginResponseDto
+import com.alguien.dijochamba.features.auth.data.remote.models.LoginRequestDto
+import com.alguien.dijochamba.features.auth.data.remote.models.LoginResponseDto
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.Headers

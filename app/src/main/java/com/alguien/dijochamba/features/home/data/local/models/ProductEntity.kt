@@ -1,4 +1,4 @@
-package pe.edu.upc.easyshop.features.home.data.local.models
+package com.alguien.dijochamba.features.home.data.local.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
